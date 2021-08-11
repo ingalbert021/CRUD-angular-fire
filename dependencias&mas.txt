@@ -1,0 +1,31 @@
+//dependencias 
+//necesarias 
+npm i -s @angular/material 
+
+npm i @angular/cdk @angular/animations
+
+/*para intanciar firebase en angular 
+tienes que copiar el codigo de enlace que probe fire base
+luego de crear la base de datos
+parecido a el siguiente */
+ /*nota son varios tipos de enlace tienes quedarle 
+ a la opcionde de configuracion para que esta aparezca*/
+
+/*este codigo se pega en el archivo environments.ts*/
+
+apiKey: "AIzaSyBKKM58c8kNi_May_vP7eMjb9JSR5Nkn4o",
+  authDomain: "customers-efa71.firebaseapp.com",
+  projectId: "customers-efa71",
+  storageBucket: "customers-efa71.appspot.com",
+  messagingSenderId: "148421737628",
+  appId: "1:148421737628:web:590f4531adf44539dcc159",
+  measurementId: "G-W5VTL2H2N4"
+
+  /*luego instalr la dependencia npm i firebase @angular/fire
+  esta nos permite connectarse a firebase para obtener los datos
+  y hacer login, autenticaciones y otras cosas mas*/
+
+
+ 
+
+

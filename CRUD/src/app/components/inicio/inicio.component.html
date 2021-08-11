@@ -1,0 +1,28 @@
+
+<body>
+
+<mat-drawer-container class="example-container"  autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <h3>definicion de la funciones de mi aplicacion</h3>
+    <h3 *ngIf="showFiller">En informática, CRUD es el acrónimo de "Crear, Leer, Actualizar y Borrar" (del original en inglés: Create, Read, Update and Delete), que se usa para referirse a las funciones básicas en bases de datos o la capa de persistencia en un software..</h3>
+    <button  (click)="showFiller = !showFiller" mat-raised-button>
+      leer texto extra
+    </button>
+    
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button"  mat-button (click)="drawer.toggle()">
+      leer mas
+    </button>
+  </div>
+
+</mat-drawer-container>
+
+
+<!--drag-and-drop-->
+<div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div>
+</div>	
+</body>
+
